@@ -266,6 +266,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="SQL\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201608191737470_Bootstrapper.resx">
