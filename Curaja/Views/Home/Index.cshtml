@@ -1,7 +1,34 @@
-﻿
+﻿@model Curaja.Models.UsuarioViewModel
+
 @{
-    ViewBag.Title = "Index";
+    Layout = null;
+    ViewBag.Title = "Logo";
 }
 
-<h2>Index</h2>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/flat-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/home.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="container">
+    <div id="authentication">
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                @Html.TextBoxFor(model => Model.Email, new { @class = "form-control", @type = "email", @placeholder = "E-mail" })
+            </div>
+            <div class="form-group">
+                @Html.PasswordFor(model => Model.Senha, new { @class = "form-control", @type = "password", @placeholder = "Senha"})
+            </div>
+            <button type="submit" class="btn btn-default btn-primary btn-block btn-lg">Entrar</button>
+        }
+    </div>
+    <script src="~/Scripts/jquery-3.1.0.min.js"></script>
+    <script src="~/Scripts/flat-ui.min.js"></script>
+</body>
+</html>
 

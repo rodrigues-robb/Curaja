@@ -201,6 +201,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\flat-ui.css" />
     <Content Include="Content\flat-ui.min.css" />
+    <Content Include="Content\home.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -251,6 +252,7 @@
       <DependentUpon>201608191737470_Bootstrapper.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\UsuarioViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -272,7 +274,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="fonts\glyphicons\" />
     <Folder Include="fonts\lato\" />
-    <Folder Include="Models\" />
     <Folder Include="SQL\" />
   </ItemGroup>
   <ItemGroup>
